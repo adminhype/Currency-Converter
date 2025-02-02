@@ -11,7 +11,7 @@
     />
     <link rel="manifest" href="manifest.json">
 
-    <title><Wärhungsrechner</title>
+    <title>Währungsrechner</title>
     <style>
       body {
         background-color: rgb(15, 15, 15);
@@ -85,24 +85,30 @@
     </div>
 
     <div class="input-container" >
-      <img class="flag" src="img/eu.png" alt="" />
+      <img class="flag" src="img/eu.png" alt="EU-Flagge" />
       <input value="100" id="euroField" type="number" />
-      <span class="currency" >EUR</span>
+      <span class="currency" >€</span>
+    </div>
+    
+    <div class="container-center">
+      <button onclick="calc2()">Euro Berechnen</button>
     </div>
 
     <div class="container-center">
       <img src="img/arrows.png" alt="" />
     </div>
+
+    <div class="container-center">
+      <button onclick="calc()" >USD Berechnen</button>
+    </div>
     
     <div class="input-container" >
       <img class="flag" src="img/usa.png" alt="" />
-      <input id="usd" type="text" />
-      <span class="currency">USD
+      <input id="usd" type="number" />
+      <span class="currency">$</span>
     </div>
-</span>
-    <div class="container-center">
-      <button onclick="calc()" >Berechnen</button>
-    </div>
+
+
     <script src="script.js" ></script>
   </body>
 </html>
